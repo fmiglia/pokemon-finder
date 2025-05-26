@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokémon Explorer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="pokeball-container">
+            <div class="pokeball"></div>
+        </div>
+        <h1 class="title">Pokémon</h1>
+        <h2 class="subtitle">Gotta Catch 'Em All!</h2>
+        
+        <div class="search-container">
+            <input type="text" id="pokemonName" placeholder="Inserisci il nome del Pokémon">
+            <button onclick="fetchData()" class="search-button">Cerca Pokémon</button>
+        </div>
+
+        <div class="pokemon-display">
+            <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none;">
+        </div>
+
+        <div class="audio-controls">
+            <button id="audioToggle" class="audio-button" onclick="toggleAudio()">
+                🔈 Attiva Musica
+            </button>
+        </div>
+    </div>
+
+    <audio id="pokemonTheme" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
