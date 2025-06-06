@@ -1,0 +1,16 @@
+{
+  "name": "pokemon-api-project",
+  "version": "1.0.0",
+  "description": "Progetto che utilizza l'API di Pokemon",
+  "main": "script.js",
+  "scripts": {
+    "start": "node script.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 
